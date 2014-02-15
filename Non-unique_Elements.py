@@ -1,10 +1,6 @@
 
 def checkio(list):
-  l = []
-  for elem in list:
-    if list.count(elem) > 1:
-      l.append(elem)
-  return l
+  return [x for x in list if list.count(x) > 1]
 
 def myassert(x, y):
   print(x)
