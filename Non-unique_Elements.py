@@ -1,6 +1,6 @@
 
 def checkio(list):
-  return [x for x in list if list.count(x) > 1]
+  return filter(lambda x: list.count(x) > 1, list)
 
 def myassert(x, y):
   print(x)
